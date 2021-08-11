@@ -1,0 +1,18 @@
+<%- include('partials/header'); -%>
+<h1>
+Home
+</h1>
+
+<p>
+<%=homecon%>
+</p>
+
+<% for(var i = 0 ; i<pCon.length ; i++) {%>
+    <h1><%=pCon[i].title%></h1>
+    <p><%=pCon[i].content.substring(0,300)%> <b>.......<a href="/post/><%=pCon[i].title%>">Read More</a></b></p>
+
+<%}%>
+
+
+<%- include('partials/footer'); -%>
+
